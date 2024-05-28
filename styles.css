@@ -1,0 +1,68 @@
+:root{
+    --bgColor: #333;
+    --textPrimary: #fff;
+    --textSecondary: #666;
+    --primaryColor: #fd4;
+}
+
+main{
+    padding : 0 32px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bgColor);
+    color: var(--textPrimary);
+    font-size : 1.4rem;
+}
+
+h1{
+    color : var(--primaryColor);
+}
+
+h1 svg {
+    width: 48px;
+    fill: var(--primaryColor);
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0 36px 0;
+}
+
+#buttons {
+    text-align: right;
+
+}
+
+#info {
+    color: var(--primaryColor);
+}
+
+button { 
+    background: rgba(255,255,255,0.2);
+    border : 0;
+    color:rgba(255,255,255,0.5);
+    padding: 8px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.word {
+    display: inline-block;
+    font-family: "Roboto Mono", monospace;
+    margin: 0 8px;
+}
+
+div#game{
+     line-height: 40px;
+     height: 20vh;
+     overflow: hidden;
+}
