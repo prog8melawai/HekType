@@ -5,21 +5,22 @@
     --primaryColor: #fd4;
 }
 
-main{
-    padding : 0 32px;
-}
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+main{
+    margin-top: 24px;
+    padding : 0 40px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--bgColor);
     color: var(--textPrimary);
-    font-size : 1.4rem;
+    font-size : 1.25rem;
 }
 
 h1{
@@ -55,6 +56,27 @@ button {
     cursor: pointer;
 }
 
+#words {
+    filter: blur(5px);
+    color: var(--textSecondary);
+}
+#game:focus #words {
+    filter: blur(0);
+
+}
+
+#focus-error {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    padding-top: 35px;
+}
+
+#game:focus #focus-error {
+    display: none;
+}
+
+
 div.word {
     display: inline-block;
     font-family: "Roboto Mono", monospace;
@@ -65,4 +87,12 @@ div#game{
      line-height: 40px;
      height: 20vh;
      overflow: hidden;
+}
+
+.letter.correct {
+    color: #fff;
+}
+
+.letter.incorrect{
+    color: #f55;
 }
